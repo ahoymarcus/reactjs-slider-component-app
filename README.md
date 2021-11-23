@@ -137,12 +137,6 @@ return (
 
 <br />
 
-### Usando funcionalidade de Intervalo para ter mudanças automáticas de imagens no slider:
-
-![Imagem da funcionalidade de Intervalo de mudanças automáticas de imagens no slider](/public/images/usando-intervalos-automaticos-para-renderizar-novas-imagens.png)
-
-<br />
-
 Usando um **useEffect()** para monitorar o índice dos dados sendo renderizados para garantir que sempre haja uma continuidade:
 
 <br />
@@ -159,6 +153,12 @@ useEffect(() => {
     }
   }, [index, people]);
 ```
+
+<br />
+
+### Usando funcionalidade de Intervalo para ter mudanças automáticas de imagens no slider:
+
+![Imagem da funcionalidade de Intervalo de mudanças automáticas de imagens no slider](/public/images/usando-intervalos-automaticos-para-renderizar-novas-imagens.png)
 
 <br />
 
