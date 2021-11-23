@@ -32,9 +32,26 @@ Assim, como funcionalidade principal, que é o Slider, o professor Smilga usa **
 
 <br />
 
-### Imagem da funcionalidade acrescida de Aniversariantes do Dia:
+### Imagem da tela do professor Smilga apresentando as propriedades CSS que vão participar do processo para desembaralhar as imagens do Slider:
 
-![Imagem da funcionalidade acrescida de Aniversariantes do Dia](/public/images/)
+![Imagem da funcionalidade acrescida de Aniversariantes do Dia](/public/images/imagem-mostrada-pelo-prof-smilga.png)
+
+<br />
+
+Abaixo, temos os código CSS que por meio da propriedade transform e da função translateX(), faz com que as imagens seja remanejadas para os lados, deixando apenas a imagem ativa ao centro!!!
+
+```
+article.activeSlide {
+  opacity: 1;
+  transform: translateX(0);
+}
+article.lastSlide {
+  transform: translateX(-100%);
+}
+article.nextSlide {
+  transform: translateX(100%);
+}
+```
 
 <br />
 
