@@ -95,9 +95,9 @@ E a propriedade Height é essencial quando trabalhamos com a propriedade de posi
 
 <br />
 
-### As imagens transparentes jogadas para a direita com **translateX(100%)**:
+### Todas as imagens transparentes jogadas para a direita com **translateX(100%)**:
 
-![As imagens transparentes jogadas para a direita](</public/images/as-imagens-para-direita-com-translateX(100%).png>)
+![As imagens transparentes jogadas para a direita](</public/images/as-imagens-para-direita-com-translateX(100).png>)
 
 <br />
 
