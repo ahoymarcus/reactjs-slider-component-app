@@ -53,6 +53,40 @@ article.nextSlide {
 }
 ```
 
+Outras três propriedades CSS que estão colaborando na criação do efeito são:
+
+```
+.section-center {
+  ...
+  outras
+  propriedades
+  CSS
+  ...
+  height: 450px;
+  overflow: hidden;
+}
+
+article {
+  ...
+  outras
+  propriedades
+  CSS
+  ...
+  opacity: 0;
+  ...
+  outras
+  propriedades
+  CSS
+  ...
+}
+```
+
+Assim, as propriedades Overflow vai esconder as imagens fora da Window do browser, Opacity fará todas as imagens transparentes, exceto a imagem ativa.
+
+<br />
+
+E a propriedade Height é essencial quando trabalhamos com a propriedade de posicionamento absoluto, porque aqui as imagens perdem a característica default HTML de pertencerem ao Flow do documento.
+
 <br />
 
 ### Imagem da funcionalidade acrescida de Aniversariantes do Dia:
