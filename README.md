@@ -87,7 +87,7 @@ article {
 
 <br />
 
-Assim, as propriedades Overflow vai esconder as imagens fora da Window do browser, Opacity fará todas as imagens transparentes, exceto a imagem ativa.
+Assim, as propriedades **Overflow** vai esconder as imagens fora da Window do browser, **Opacity** fará todas as imagens transparentes, exceto a imagem ativa.
 
 <br />
 

@@ -1,5 +1,5 @@
 // https://www.youtube.com/watch?v=ly3m6mv5qvg
-// 2 hr 17' 00 ''
+// 2 hr 50' 00 ''
 import React, { useState, useEffect } from 'react';
 
 import { FiChevronRight, FiChevronLeft } from 'react-icons/fi';
@@ -23,6 +23,18 @@ function App() {
       setIndex(0);
     }
   }, [index, people]);
+
+  /* 
+    ATENÇÃO: aqui é necessário usar uma Callback em useEffect() para remover um interval já passado, porque useEffect continua sempre monitorando outras mudanças em index... 
+  */
+  useEffect(() => {
+    let slider = setInterval(() => {
+      setIndex(index + 1);
+    }, 4000);
+
+    return () => clearInterval(slider);
+  }, [index]);
+
 
 
   return (
