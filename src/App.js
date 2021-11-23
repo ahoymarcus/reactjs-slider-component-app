@@ -13,6 +13,17 @@ function App() {
   const [ index, setIndex ] = useState(0);
 
 
+  useEffect(() => {
+    const lastIndex = people.length - 1;
+
+    if (index < 0) {
+      setIndex(lastIndex);
+    }
+    if (index > lastIndex) {
+      setIndex(0);
+    }
+  }, [index, people]);
+
 
   return (
     <section className="section">
@@ -26,8 +37,8 @@ function App() {
             people.map((person, personIndex) => {
               const { id, image, name, title, quote } = person;
               
-              // more functionality
-              // coming up here 
+              // Nesta parte do script controlamos a distribuição
+              // de classes CSS para posicionar as imagens do Slider
               let position = 'nextSlide';
               
               if (personIndex === index) {
@@ -52,10 +63,10 @@ function App() {
             })
           }
 
-          <button className="prev" >
+          <button className="prev" onClick={() => setIndex(index - 1)} >
             <FiChevronLeft />
           </button>
-          <button className="next" >
+          <button className="next" onClick={() => setIndex(index + 1)} >
             <FiChevronRight />
           </button>
         </div>

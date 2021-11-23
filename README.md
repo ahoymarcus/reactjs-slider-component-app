@@ -91,7 +91,7 @@ Assim, as propriedades Overflow vai esconder as imagens fora da Window do browse
 
 <br />
 
-E a propriedade Height é essencial quando trabalhamos com a propriedade de posicionamento absoluto, porque aqui as imagens perdem a característica default HTML de pertencerem ao Flow do documento.
+E a propriedade **Height** é essencial quando trabalhamos com a propriedade de posicionamento absoluto, porque aqui as imagens perdem a característica default HTML de pertencerem ao Flow do documento.
 
 <br />
 
@@ -107,7 +107,14 @@ E a propriedade Height é essencial quando trabalhamos com a propriedade de posi
 
 <br />
 
-Nesta parte do script controlamos a distribuição de classes CSS para posicionar as imagens do Slider:
+### Imagem do processo de criação da funcionalidade de slide:
+
+![Imagem da funcionalidade acrescida de Aniversariantes do Dia](/public/images/demonstração-da-funcionalidade-pelo-professor-smilga.png)
+
+<br />
+
+Nesta parte do script controlamos a distribuição de classes CSS para posicionar as imagens do Slider.
+Em especial podemos observar a segunda **if clause**, por meio da qual garantimos que haverá sempre imagens posicionadas à esquerda da renderização do Slider que corre em ambas as direções:
 
 <br />
 
