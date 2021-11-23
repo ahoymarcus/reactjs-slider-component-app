@@ -95,6 +95,47 @@ E a propriedade Height é essencial quando trabalhamos com a propriedade de posi
 
 <br />
 
+### As imagens transparentes jogadas para a direita com **translateX(100%)**:
+
+![As imagens transparentes jogadas para a direita](</public/images/as-imagens-para-direita-com-translateX(100%).png>)
+
+<br />
+
+### A imagem ativa sendo colocada ao centro com **translateX(0)**:
+
+![A imagem ativa sendo colocada ao centro](</public/images/imagem-ativa-ao-centro-com-translateX(0).png>)
+
+<br />
+
+Nesta parte do script controlamos a distribuição de classes CSS para posicionar as imagens do Slider:
+
+<br />
+
+```
+let position = 'nextSlide';
+
+if (personIndex === index) {
+    position = 'activeSlide';
+}
+if (
+personIndex === index - 1 ||
+(index === 0 && personIndex === people.length - 1)
+) {
+    position = 'lastSlide';
+}
+
+return (
+    <article key={id} className={position} >...
+```
+
+<br />
+
+### Imagem da funcionalidade acrescida de Aniversariantes do Dia:
+
+![Imagem da funcionalidade acrescida de Aniversariantes do Dia](/public/images/)
+
+<br />
+
 ### Imagem da funcionalidade acrescida de Aniversariantes do Dia:
 
 ![Imagem da funcionalidade acrescida de Aniversariantes do Dia](/public/images/)
