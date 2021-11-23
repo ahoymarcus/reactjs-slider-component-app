@@ -137,21 +137,51 @@ return (
 
 <br />
 
-### Imagem da funcionalidade acrescida de Aniversariantes do Dia:
+### Usando funcionalidade de Intervalo para ter mudanças automáticas de imagens no slider:
 
-![Imagem da funcionalidade acrescida de Aniversariantes do Dia](/public/images/)
-
-<br />
-
-### Imagem da funcionalidade acrescida de Aniversariantes do Dia:
-
-![Imagem da funcionalidade acrescida de Aniversariantes do Dia](/public/images/)
+![Imagem da funcionalidade de Intervalo de mudanças automáticas de imagens no slider](/public/images/usando-intervalos-automaticos-para-renderizar-novas-imagens.png)
 
 <br />
 
-### Imagem da funcionalidade acrescida de Aniversariantes do Dia:
+Usando um **useEffect()** para monitorar o índice dos dados sendo renderizados para garantir que sempre haja uma continuidade:
 
-![Imagem da funcionalidade acrescida de Aniversariantes do Dia](/public/images/)
+<br />
+
+```
+useEffect(() => {
+    const lastIndex = people.length - 1;
+
+    if (index < 0) {
+      setIndex(lastIndex);
+    }
+    if (index > lastIndex) {
+      setIndex(0);
+    }
+  }, [index, people]);
+```
+
+<br />
+
+Usando outro **useEffect()** para monitorar as mudanças de índice dos dados e aplicar intervalo de tempo para mudanças automáticas nas imagens sendo renderizadas.
+
+<br />
+
+Observe ainda a presença de uma função de Callback para fazer limpeza dos intervalos passados e evitar **Leaks** de memória na aplicação:
+
+<br />
+
+```
+useEffect(() => {
+    const lastIndex = people.length - 1;
+
+    if (index < 0) {
+      setIndex(lastIndex);
+    }
+    if (index > lastIndex) {
+      setIndex(0);
+    }
+  }, [index, people]);
+```
 
 <br />
 <br />
