@@ -53,7 +53,11 @@ article.nextSlide {
 }
 ```
 
+<br />
+
 Outras três propriedades CSS que estão colaborando na criação do efeito são:
+
+<br />
 
 ```
 .section-center {
@@ -80,6 +84,8 @@ article {
   ...
 }
 ```
+
+<br />
 
 Assim, as propriedades Overflow vai esconder as imagens fora da Window do browser, Opacity fará todas as imagens transparentes, exceto a imagem ativa.
 
